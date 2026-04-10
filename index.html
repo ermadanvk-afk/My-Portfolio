@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madan Vishwakarma | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Madan Vishwakarma - Data Science, AI, and Embedded Systems Engineer.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grid-overlay"></div>
+
+    <nav class="navbar">
+        <div class="logo">MV<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h2 class="greeting">Hello, I'm Madan</h2>
+                <h1 class="headline">Turning Data into <br><span class="highlight">Actionable Intelligence.</span></h1>
+                <p class="sub-headline">B.Tech Student at IIT Bhilai specializing in Data Science, AI, and Embedded
+                    Systems.</p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#" class="btn btn-secondary">Download Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Education Section -->
+        <section id="about" class="about section-padding fade-in">
+            <div class="section-header">
+                <span class="mono-tag">01.</span>
+                <h2>Education & Achievements</h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="glass-card education-card">
+                    <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>IIT Bhilai</h3>
+                    <p class="degree">B.Tech in Data Science & Artificial Intelligence</p>
+                    <div class="stats">
+                        <span class="highlight-box">Current CGPA: 8.63/10</span>
+                    </div>
+                </div>
+                <div class="glass-card achievement-card">
+                    <div class="card-icon"><i class="fa-solid fa-award"></i></div>
+                    <h3>Key Milestones</h3>
+                    <ul class="achievement-list">
+                        <li><i class="fa-solid fa-check"></i> Reliance Foundation Merit Scholar 2024</li>
+                        <li><i class="fa-solid fa-check"></i> JEE Advanced AIR 15980</li>
+                        <li><i class="fa-solid fa-check"></i> Award-winning Poetry (Inter-IIT)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Matrix Section -->
+        <section id="skills" class="skills section-padding fade-in">
+            <div class="section-header">
+                <span class="mono-tag">02.</span>
+                <h2>Skills Matrix</h2>
+                <div class="line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="glass-card skill-category">
+                    <div class="category-header">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag cyber-tag">RISC-V Assembly</span>
+                    </div>
+                </div>
+
+                <div class="glass-card skill-category">
+                    <div class="category-header">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>Data Science</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">scikit-learn</span>
+                        <span class="skill-tag">TensorFlow</span>
+                    </div>
+                </div>
+
+                <div class="glass-card skill-category">
+                    <div class="category-header">
+                        <i class="fa-solid fa-microchip"></i>
+                        <h3>Architecture</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag cyber-tag">RISC-V Architecture</span>
+                        <span class="skill-tag">IoT System Design (ESP32)</span>
+                    </div>
+                </div>
+
+                <div class="glass-card skill-category">
+                    <div class="category-header">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Leadership</span>
+                        <span class="skill-tag">Mentoring</span>
+                        <span class="skill-tag">Creative Writing</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GitHub Activity Heat Map Placeholder -->
+            <div class="github-heatmap-container glass-card">
+                <h3><i class="fa-brands fa-github"></i> Contribution Graph</h3>
+                <div id="github-heatmap" class="heatmap"></div>
+            </div>
+        </section>
+
+        <!-- Project Gallery -->
+        <section id="projects" class="projects section-padding fade-in">
+            <div class="section-header">
+                <span class="mono-tag">03.</span>
+                <h2>Featured Projects</h2>
+                <div class="line"></div>
+            </div>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="glass-card project-card">
+                    <div class="card-inner">
+                        <div class="project-links">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <h3>Automotive Market Analysis</h3>
+                        <p>A comprehensive statistical analysis evaluating market trends of vehicles.</p>
+                        <div class="technical-details">
+                            <div class="detail-item"><span class="label">Scale:</span> 11K+ Listings</div>
+                            <div class="detail-item tooltip" data-tooltip="Pearson correlation logic"><span
+                                    class="label">Insight:</span> r ≈ 0.65 correlation (HP vs. Price)</div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="mono-font">Python</span>
+                            <span class="mono-font">Pandas</span>
+                            <span class="mono-font">Statistics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-card project-card">
+                    <div class="card-inner">
+                        <div class="project-links">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <h3>Crop Diversification Strategy</h3>
+                        <p>Data-driven strategy formulation to enhance agricultural economic output.</p>
+                        <div class="technical-details">
+                            <div class="detail-item highlight-insight"><span class="label">Impact:</span> Increases
+                                income by 3-4x for Chhattisgarh farmers.</div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="mono-font">Data Analysis</span>
+                            <span class="mono-font">scikit-learn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glass-card project-card">
+                    <div class="card-inner">
+                        <div class="project-links">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <h3>IoT Plant Monitoring</h3>
+                        <p>An end-to-end embedded systems pipeline for automated agricultural monitoring.</p>
+                        <div class="pipeline-flow">
+                            <span class="node">ESP32</span> <i class="fa-solid fa-arrow-right flow-arrow"></i>
+                            <span class="node">REST API</span> <i class="fa-solid fa-arrow-right flow-arrow"></i>
+                            <span class="node">TF Inference</span>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="mono-font">C++</span>
+                            <span class="mono-font">TensorFlow</span>
+                            <span class="mono-font">ESP32</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Leadership -->
+        <section id="experience" class="experience section-padding fade-in">
+            <div class="section-header">
+                <span class="mono-tag">04.</span>
+                <h2>Experience & Leadership</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Education Mentor</h3>
+                        <h4 class="org">IIT Bhilai</h4>
+                        <p>Dedicated to improving conceptual understanding for over 20+ students, focusing on technical
+                            fundamentals and mathematical concepts.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot alt"></div>
+                    <div class="timeline-content">
+                        <h3>Outreach Head</h3>
+                        <h4 class="org">E-Cell, IIT Bhilai</h4>
+                        <p>Leading outreach initiatives to connect students with entrepreneurial opportunities and
+                            building the startup ecosystem within the campus.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot cyan"></div>
+                    <div class="timeline-content">
+                        <h3>Executive</h3>
+                        <h4 class="org">NSS (National Service Scheme)</h4>
+                        <p>Organizing and participating in various community service and social impact activities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h2>Let's Connect</h2>
+            <p>Currently open for new opportunities and interesting projects.</p>
+
+            <form class="contact-form" action="https://formspree.io/f/xwvwdylb" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required class="form-input">
+                    <input type="email" name="email" placeholder="Your Email" required class="form-input">
+                </div>
+                <textarea name="message" placeholder="Your message..." rows="4" required class="form-input"></textarea>
+                <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+            </form>
+
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:madanv@iitbhilai.ac.in" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p class="copyright">Designed & Built by Madan Vishwakarma</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
